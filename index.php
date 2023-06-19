@@ -66,9 +66,9 @@ foreach ($archivos as $archivo) {
                         <tr>
                             <td><?php echo $nota['titulo']; ?></td>
                             <td>
-                            <a class="btn btn-primary" href="visualizar_nota.php?archivo=<?php echo urlencode($nota['archivo']); ?>">Visualizar</a>
-                                <a class="btn btn-warning" href="editar_nota.php?archivo=<?php echo urlencode($nota['archivo']); ?>&titulo=<?php echo urlencode($nota['titulo']); ?>">Editar</a>
-                                <a class="btn btn-danger" href="eliminar_nota.php?archivo=<?php echo urlencode($nota['archivo']); ?>">Eliminar</a>
+                            <a class="btn btn-primary" href="visualizar.php?archivo=<?php echo urlencode($nota['archivo']); ?>">Visualizar</a>
+                                <a class="btn btn-warning" href="editar.php?archivo=<?php echo urlencode($nota['archivo']); ?>&titulo=<?php echo urlencode($nota['titulo']); ?>">Editar</a>
+                                <a class="btn btn-danger" href="eliminado.php?archivo=<?php echo urlencode($nota['archivo']); ?>">Eliminar</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 <body>
     <h1>Editar Nota</h1>
 
-    <form method="POST" action="guardar_modificacion.php">
+    <form method="POST" action="guardado.php">
         <input type="hidden" name="archivo" value="<?php echo $archivo; ?>">
         <label for="titulo">Título:</label>
         <input type="text" id="titulo" name="titulo" required value="<?php echo $titulo; ?>">
